@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "me.crupette.sheepconsistency.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "SheepEntityRendererMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "sheepconsistency",
+  "version": "${version}",
+  "name": "Sheep Consistency",
+  "description": "Makes the sheared variants of sheep match the colors they were dyed with. Based on bedrock version's sheep",
+  "authors": [
+    "Crupette"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/sheepconsistency/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.crupette.sheepconsistency.SheepConsistency"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "sheepconsistency.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.4.0"
+  }
+}
