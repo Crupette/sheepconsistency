@@ -3,9 +3,10 @@
   "package": "me.crupette.sheepconsistency.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+  ],
+  "client": [
     "SheepEntityRendererMixin"
   ],
-  "client": [],
   "server": [],
   "injectors": {
     "defaultRequire": 1

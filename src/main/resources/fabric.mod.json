@@ -13,10 +13,10 @@
   "icon": "assets/sheepconsistency/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
+    "main": [],
+    "client": [
       "me.crupette.sheepconsistency.SheepConsistency"
     ],
-    "client": [],
     "server": []
   },
   "mixins": [
