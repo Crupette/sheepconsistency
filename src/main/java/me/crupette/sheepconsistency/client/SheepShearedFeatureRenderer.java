@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 @Environment(EnvType.CLIENT)
 public class SheepShearedFeatureRenderer extends FeatureRenderer<SheepEntity, SheepEntityModel<SheepEntity>> {
 
-    private final SheepEntityModel<SheepEntity> model = new SheepEntityModel<>();
+    private final SheepEntityModel<SheepEntity> model = new SheepEntityModel<>(SheepEntityModel.getTexturedModelData().createModel());
     private static final Identifier SKIN = new Identifier(SheepConsistency.MOD_ID, "textures/entity/sheep/sheep_sheared.png");
 
     public SheepShearedFeatureRenderer(FeatureRendererContext<SheepEntity, SheepEntityModel<SheepEntity>> context) {
@@ -29,7 +29,7 @@ public class SheepShearedFeatureRenderer extends FeatureRenderer<SheepEntity, Sh
         float w;
         float x;
         if (sheepEntity.hasCustomName() && "jeb_".equals(sheepEntity.getName().asString())) {
-            int n = sheepEntity.age / 25 + sheepEntity.getEntityId();
+            int n = sheepEntity.age / 25 + sheepEntity.getId();
             int o = DyeColor.values().length;
             int p = n % o;
             int q = (n + 1) % o;
